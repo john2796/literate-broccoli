@@ -11,7 +11,9 @@ returnSubjects = async (req, res, studentId) => {
       .json({ message: "Please make sure you are passing params studentId" });
   }
   try {
-    let subjects = await db.findAllBy("subjects", { student_id: studentId });
+    let subjects = await db
+      .findAllBy("subjects", { student_id: studentId })
+      .orderBy("id", "asc");
     res.json(subjects);
   } catch ({ message }) {
     res.status(500).json({ message });
