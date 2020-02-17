@@ -1,6 +1,6 @@
 #  Tashi-Inc-BE 
 
-##### Backend URL : 
+##### Backend URL : https://tashi-be.herokuapp.com/
 
 ## Table of Contents
 
