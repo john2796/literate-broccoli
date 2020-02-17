@@ -5,13 +5,13 @@ exports.up = function(knex, Promise) {
     tbl.integer("subject_score");
     tbl.string("date");
 
-    // tbl
-    //   .integer("student_id")
-    //   .unsigned()
-    //   .notNullable()
-    //   .references("id")
-    //   .inTable("students")
-    //   .onDelete("restrict")
+    tbl
+      .integer("student_id")
+      .unsigned()
+      .notNullable()
+      .references("id")
+      .inTable("students")
+      .onDelete("restrict");
   });
 };
 
