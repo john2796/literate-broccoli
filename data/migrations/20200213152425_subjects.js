@@ -1,7 +1,7 @@
 exports.up = function(knex, Promise) {
   return knex.schema.createTable("subjects", tbl => {
     tbl.increments();
-    tbl.string("subject").unique();
+    tbl.string("subject");
     tbl.integer("subject_score");
     tbl.string("date");
 
